@@ -66,6 +66,3 @@ def runner
   end_game
 end
 
-def runner
-  until 
-end
