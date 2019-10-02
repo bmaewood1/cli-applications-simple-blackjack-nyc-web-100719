@@ -64,29 +64,3 @@ def runner
     display_card_total
 end
 
-describe "#runner" do
-  before(:each) do
-    def get_user_input
-      "h"
-    end 
-  end
-
-  it "calls on the #welcome method, 
-  then on the #initial_round method, 
-  then calls #hit? and #display_card_total methods
-  -until- the card sum is greater than 21,
-  then calls on the #end_game method" do
-
-    expect(self).to receive(:deal_card).at_least(3).times.and_return(10)
-    expect(self).to receive(:get_user_input).and_return("h")
-
-    expect($stdout).to receive(:puts).with("Welcome to the Blackjack Table")
-    expect($stdout).to receive(:puts).with("Your cards add up to 20")
-    expect($stdout).to receive(:puts).with("Type 'h' to hit or 's' to stay")
-    expect($stdout).to receive(:puts).with("Your cards add up to 30")
-    expect($stdout).to receive(:puts).with("Sorry, you hit 30. Thanks for playing!")
-    runner
-  end
-end
-
-    
