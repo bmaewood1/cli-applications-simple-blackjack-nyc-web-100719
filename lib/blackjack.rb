@@ -57,7 +57,7 @@ end
 
 def runner
   counter = 0
-  until counter = 
+  until counter > 21
   welcome
   initial_round
   hit?
