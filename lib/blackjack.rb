@@ -43,8 +43,9 @@ def hit?(current_card_tot)
     new_card = deal_card
     return current_card_tot + new_card
   else
-    invalid_command
+    puts "Please enter a valid command"
   end
+  prompt_user
 end
 
 
