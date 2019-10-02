@@ -45,7 +45,6 @@ def hit?(current_card_tot)
   else
     invalid_command
   end
-  prompt_user
 end
 
 
