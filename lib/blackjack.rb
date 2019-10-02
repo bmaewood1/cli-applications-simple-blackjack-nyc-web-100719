@@ -37,9 +37,9 @@ end
 def hit?(current_card_tot)
   prompt_user
   input = get_user_input
-  if input = 's'
+  if input == 's'
     return current_card_tot
-  if input = 'h'
+  if input == 'h'
     new_card = deal_card
     return current_card_tot + new_card
   else
