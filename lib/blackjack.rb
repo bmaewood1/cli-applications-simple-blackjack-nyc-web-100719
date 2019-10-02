@@ -56,7 +56,7 @@ end
 #####################################################
 
 def runner
-  
+  counter = 0
   welcome
   initial_round
   hit?
