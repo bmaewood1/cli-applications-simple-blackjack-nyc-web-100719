@@ -39,7 +39,7 @@ def hit?(current_card_tot)
   input = get_user_input
   if input == 's'
     return current_card_tot
-  if input == 'h'
+  elsif input == 'h'
     new_card = deal_card
     return current_card_tot + new_card
   else
