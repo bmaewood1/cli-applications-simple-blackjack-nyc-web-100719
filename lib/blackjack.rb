@@ -56,12 +56,9 @@ end
 #####################################################
 
 def runner
-  counter = 0
-  until counter > 21
-    welcome
-    initial_round
-    hit?
-    display_card_total
-  end
+  welcome
+  initial_round
+  hit?
+  display_card_total
 end
 
