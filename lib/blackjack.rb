@@ -56,12 +56,13 @@ end
 #####################################################
 
 def runner
+  welcome
+  initial_round
+  hit?
+  display_card_total
   num = display_card_total
     until num > 21
-      welcome
-      initial_round
-      hit?
-      display_card_total
+      runner
     end
   end_game
 end
